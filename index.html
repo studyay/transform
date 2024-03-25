@@ -12,7 +12,7 @@
 
     <style>
         body {
-            width: 700px;
+            width: 600px;
             margin: 30px auto 0px auto;
 
             display: flex;
@@ -27,9 +27,7 @@
             height: 100px;
             background-color: rgb(0, 0, 0, 0.3);
 
-            border-radius: 15%;
-
-            margin: 60px;
+            margin: 50px;
             margin-bottom: 100px;
             perspective: 150px;
         }
@@ -40,17 +38,16 @@
 
         .group>section>div {
             width: 100px;
-            height: 90px;
-            color: black;
-            background-image: url(Yellow.png);
-            background-position: center;
-            background-size: cover;
+            height: 100px;
+            color: white;
+            background-color: black;
 
-            border-radius: 15%;
-
-            padding-top: 10px;
             text-align: center;
             transition: 0.5s;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
 
         .rotate1:hover {
@@ -111,7 +108,7 @@
     </style>
 </head>
 
-<body style="background-color: #0565FD;">
+<body>
     <div class="group">
         <section>
             <div class="rotate1">X rotation</div>
@@ -170,9 +167,7 @@
         <section>
             <div class="flipZ flip3">Z bottom</div>
         </section>
-    </div>
 
-    <div class="group">
         <section>
             <div class="flipZ flip4">Z top</div>
         </section>
