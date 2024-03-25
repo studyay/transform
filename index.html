@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="kor">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            width: 600px;
+            margin: 30px auto 0px auto;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        section {
+            float: left;
+            width: 100px;
+            height: 100px;
+            background-color: rgb(0, 0, 0, 0.3);
+
+            margin: 50px;
+            margin-bottom: 100px;
+            perspective: 150px;
+        }
+
+        .group {
+            clear: left;
+        }
+
+        .group>section>div {
+            width: 100px;
+            height: 100px;
+            color: white;
+            background-color: black;
+
+            text-align: center;
+            transition: 0.5s;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .rotate1:hover {
+            transform: rotateX(70deg);
+        }
+
+        .rotate2:hover {
+            transform: rotateY(70deg);
+        }
+
+        .rotate3:hover {
+            transform: rotateZ(70deg);
+        }
+
+        .move1:hover {
+            transform: translateX(-50px);
+        }
+
+        .move2:hover {
+            transform: translateY(-50px);
+        }
+
+        .move3:hover {
+            transform: translateZ(-50px);
+        }
+
+        .flip1 {
+            transform-origin: center;
+        }
+
+        .flip2 {
+            transform-origin: top;
+        }
+
+        .flip3 {
+            transform-origin: bottom;
+        }
+
+        .flip4 {
+            transform-origin: left;
+        }
+
+        .flip5 {
+            transform-origin: right;
+        }
+
+        .flipX:hover {
+            transform: rotateX(180deg);
+        }
+
+        .flipY:hover {
+            transform: rotateY(180deg);
+        }
+
+        .flipZ:hover {
+            transform: rotateZ(180deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="group">
+        <section>
+            <div class="rotate1">X rotation</div>
+        </section>
+        <section>
+            <div class="rotate2">Y rotation</div>
+        </section>
+        <section>
+            <div class="rotate3">Z rotation</div>
+        </section>
+    </div>
+
+    <div class="group">
+        <section>
+            <div class="move1">X move</div>
+        </section>
+        <section>
+            <div class="move2">Y move</div>
+        </section>
+        <section>
+            <div class="move3">Z move</div>
+        </section>
+    </div>
+
+    <div class="group">
+        <section>
+            <div class="flipX flip1">X center</div>
+        </section>
+        <section>
+            <div class="flipX flip2">X top</div>
+        </section>
+        <section>
+            <div class="flipX flip3">X bottom</div>
+        </section>
+    </div>
+
+    <div class="group">
+        <section>
+            <div class="flipY flip1">Y center</div>
+        </section>
+        <section>
+            <div class="flipY flip4">Y left</div>
+        </section>
+        <section>
+            <div class="flipY flip5">Y right</div>
+        </section>
+    </div>
+
+    <div class="group">
+        <section>
+            <div class="flipZ flip1">Z center</div>
+        </section>
+        <section>
+            <div class="flipZ flip2">Z top</div>
+        </section>
+        <section>
+            <div class="flipZ flip3">Z bottom</div>
+        </section>
+
+        <section>
+            <div class="flipZ flip4">Z top</div>
+        </section>
+        <section>
+            <div class="flipZ flip5">Z bottom</div>
+        </section>
+    </div>
+</body>
+
+</html>
