@@ -59,7 +59,7 @@
         }
 
         .rotate3:hover {
-            transform: rotateZ(70deg);
+            transform: rotateZ(-70deg);
         }
 
         .move1:hover {
@@ -104,6 +104,16 @@
 
         .flipZ:hover {
             transform: rotateZ(180deg);
+        }
+
+        .visible {
+            backface-visibility: visible;
+        }
+        .hidden {
+            backface-visibility: hidden;
+        }
+        .flip:hover{
+            transform: rotateX(180deg);
         }
     </style>
 </head>
@@ -167,12 +177,23 @@
         <section>
             <div class="flipZ flip3">Z bottom</div>
         </section>
+    </div>
 
+    <div class="group">
         <section>
             <div class="flipZ flip4">Z left</div>
         </section>
         <section>
             <div class="flipZ flip5">Z right</div>
+        </section>
+    </div>
+
+    <div class="group">
+        <section>
+            <div class="visible flip">visible</div>
+        </section>
+        <section>
+            <div class="hidden flip">hidden</div>
         </section>
     </div>
 </body>
